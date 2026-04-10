@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Игра</title>
+</head>
+<body style="text-align:center; font-family:sans-serif;">
+    <h1>Кликай и получай монеты 💰</h1>
+    <button onclick="sendData()" style="font-size:20px; padding:10px;">
+        Нажми меня
+    </button>
+
+    <script>
+        function sendData() {
+            Telegram.WebApp.sendData("click");
+        }
+    </script>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</body>
+</html>
